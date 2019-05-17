@@ -1,0 +1,9 @@
+#cloud-config
+package_update: true
+write_files:
+  - path: /root/index.html
+    content: |
+      Sos un capo de terraform!
+runcmd:
+  - cd /root
+  - mkdir hello_terraform
